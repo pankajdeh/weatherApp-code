@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper{
+    /* width: 10%; */
+    /* margin: auto; */
+    
+}
+.tab-container{
+    display: flex;
+justify-content: space-between;
+    align-items: center;
+    
+    font-size: 30px;
+    /* text-decoration: dotted; */
+
+}
+.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+.form-container.active{
+    scale: 1;
+    opacity: 1;
+    display: flex;
+}
