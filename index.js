@@ -20,10 +20,11 @@ let currentTab = userTab ;
 const API_KEY = "87af4856be9e4dfc3b4346ad20091354"
 currentTab.classList.add("current-tab")
 
+getfromSessionStorage()
 
 
 
-
+// 
 function switchTab(clickedTab){
     if(clickedTab != currentTab){
         currentTab.classList.remove("current-tab");
@@ -45,11 +46,9 @@ function switchTab(clickedTab){
         // for coordinates , if we haved saved them there,
         getfromSessionStorage()
 
-
     }
 
 }
-
 
 userTab.addEventListener("click", ()=>{
     //pass clicked tab as input parameter
@@ -77,7 +76,7 @@ function getfromSessionStorage(){
 
 ///api call kr rhe h --async fun banana padega 
 async function fetchUserWeatherInfo(coordinates){
-    const {lat, lon} = coordinates
+    const {lat, lon} = coordinates                    
     //make grantContainer invisible 
 
     grantAccessContainer.classList.remove("active")
